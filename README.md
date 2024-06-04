@@ -27,13 +27,13 @@
 - **Таблица «Role»** _(idRole, nameRole)_ содержит информацию о ролях
 - **Таблица «User»** _(idUser, login, pass, idRole)_ содержит информацию о пользователях
 - **Таблица «Student»** _(idStudent, nameStudent, surnameStudent, middleNameStudent, idUser, idClass)_ содержит информацию о студентах
-- **Таблица «Teacher»** _(idTeacher, nameTeacher, surnameTeacher, middleNameTeacher)_ содержит информацию о преподавателях
+- **Таблица «Teacher»** _(idTeacher, nameTeacher, surnameTeacher, middleNameTeacher, idDiscipline)_ содержит информацию о преподавателях
 - **Таблица «Class»** _(idClass, nameClass)_ содержит информацию о классах
 - **Таблица «Discipline»** _(idDiscipline, nameDiscipline)_ содержит информацию о дисциплинах
 - **Таблица «Homework»** _(idHomework, idClass, idTeacher, task, deadline)_ содержит информацию о домашних заданиях
 - **Таблица «Assessment»** _(idAssessment, idStudent, idDiscipline, mark, date, idType)_ содержит информацию об оценках
 - **Таблица «Type»** _(idType, nameType)_ содержит информацию о типах пропусков/видов работ
-- **Таблица «Pass»** _(idPass, idStudent, idType, data, idDiscipline)_ содержит информацию о типах пропусках
+- **Таблица «Pass»** _(idPass, idStudent, idType, data, idDiscipline)_ содержит информацию о пропусках
 - **Таблица «Schedule»** _(idSchedule, idClass, day, idTeacher)_ содержит информацию о расписании
 - **Таблица «Rating»** _(idRating, idDiscipline, assessment, idStudent)_ содержит информацию о средних оценок по предметам
 
